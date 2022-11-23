@@ -58,7 +58,14 @@ end
 use({
   "folke/noice.nvim",
   config = function()
-    require("noice").setup()
+    require("noice").setup({
+	cmdline = {
+		view="cmdline",
+	},
+	presets = {
+	bottom_search = true,
+	}
+    })
   end,
   requires = {
     "MunifTanjim/nui.nvim",
