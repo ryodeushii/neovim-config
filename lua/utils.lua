@@ -45,7 +45,8 @@ M.define_augroups({
         }, {
             "BufNewFile", "*",
             "setlocal formatoptions-=c formatoptions-=r formatoptions-=o"
-        }, {"VimLeavePre", "*", "set title set titleold="}
+        }
+        -- {"VimLeavePre", "*", "set title set titleold="}
     },
     -- _solidity = {
     --     {'BufWinEnter', '.sol', 'setlocal filetype=solidity'}, {'BufRead', '*.sol', 'setlocal filetype=solidity'},
