@@ -4,3 +4,7 @@ require('mini.pairs').setup()
 require('mini.cursorword').setup()
 require('mini.tabline').setup()
 require('mini.starter').setup()
+require('mini.jump2d').setup({mappings = {start_jumping = 'S'}});
+require('mini.fuzzy').setup()
+require('mini.indentscope').setup()
+require('mini.surround').setup({})

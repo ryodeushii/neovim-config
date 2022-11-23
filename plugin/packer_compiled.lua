@@ -86,6 +86,11 @@ local no_errors, error_msg = pcall(function()
             path = "/root/.local/share/nvim/site/pack/packer/start/coc.nvim",
             url = "https://github.com/neoclide/coc.nvim"
         },
+        ["editorconfig-vim"] = {
+            loaded = true,
+            path = "/root/.local/share/nvim/site/pack/packer/start/editorconfig-vim",
+            url = "https://github.com/editorconfig/editorconfig-vim"
+        },
         ["mini.nvim"] = {
             loaded = true,
             path = "/root/.local/share/nvim/site/pack/packer/start/mini.nvim",
@@ -100,6 +105,11 @@ local no_errors, error_msg = pcall(function()
             loaded = true,
             path = "/root/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
             url = "https://github.com/nvim-tree/nvim-tree.lua"
+        },
+        ["nvim-treesitter"] = {
+            loaded = true,
+            path = "/root/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+            url = "https://github.com/nvim-treesitter/nvim-treesitter"
         },
         ["nvim-web-devicons"] = {
             loaded = true,

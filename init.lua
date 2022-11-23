@@ -41,8 +41,12 @@ end
 
 local function plugins(use)
     use 'wbthomason/packer.nvim'
+    use 'editorconfig/editorconfig-vim'
 
     use 'echasnovski/mini.nvim'
+
+    -- use { "junegunn/fzf", run = "./install --all" }
+    -- use { "junegunn/fzf.vim" }
 
     use {'neoclide/coc.nvim', branch = 'release'}
     --[[ On new systems install COC packages via
@@ -51,9 +55,13 @@ local function plugins(use)
     -- use{'mhartington/oceanic-next'}
     use {'joshdick/onedark.vim'}
 
-    use {'nvim-lua/plenary.nvim'}
-    use {'nvim-telescope/telescope.nvim', tag = '0.1.0'}
-
+    use {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.0',
+        -- or                            , branch = '0.1.x',
+        requires = {{'nvim-lua/plenary.nvim'}}
+    }
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use {'nvim-tree/nvim-web-devicons'}
     use {'nvim-tree/nvim-tree.lua'}
 
@@ -77,3 +85,4 @@ require('config.tree')
 require('config.coc')
 require('config.keymap')
 require('config.mini')
+require('config.telescope')

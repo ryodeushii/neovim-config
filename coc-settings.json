@@ -3,6 +3,8 @@
 	"tsserver.useLocalTsdk": true,
 	"eslint.enable": true,
 	"eslint.format.enable": true,
-	"tsserver.implicitProjectConfig.experimentalDecorators": true
+	"tsserver.implicitProjectConfig.experimentalDecorators": true,
+	"formatOnSave": true,
+	"eslint.probe": ["javascript", "typescript", "typescriptreact", "javascriptreact"]
 	
 }
