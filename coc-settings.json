@@ -1,0 +1,8 @@
+{
+	"tsserver.enable": true,
+	"tsserver.useLocalTsdk": true,
+	"eslint.enable": true,
+	"eslint.format.enable": true,
+	"tsserver.implicitProjectConfig.experimentalDecorators": true
+	
+}
