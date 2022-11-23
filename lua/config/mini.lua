@@ -1,0 +1,6 @@
+require('mini.statusline').setup()
+require('mini.comment').setup()
+require('mini.pairs').setup()
+require('mini.cursorword').setup()
+require('mini.tabline').setup()
+require('mini.starter').setup()

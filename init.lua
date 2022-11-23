@@ -42,28 +42,7 @@ end
 local function plugins(use)
     use 'wbthomason/packer.nvim'
 
-    use {
-        'akinsho/bufferline.nvim',
-        tag = "v3.*",
-        requires = 'nvim-tree/nvim-web-devicons',
-        config = function() require("bufferline").setup {} end
-    }
-
-    use {
-        "nvim-lualine/lualine.nvim",
-        config = function() require("config.lualine") end
-    }
-
-    use({
-        "folke/noice.nvim",
-        config = function()
-            require("noice").setup({
-                cmdline = {view = "cmdline"},
-                presets = {bottom_search = true}
-            })
-        end,
-        requires = {"MunifTanjim/nui.nvim", "rcarriga/nvim-notify"}
-    })
+    use 'echasnovski/mini.nvim'
 
     use {'neoclide/coc.nvim', branch = 'release'}
     --[[ On new systems install COC packages via
@@ -97,3 +76,4 @@ require('config.opts')
 require('config.tree')
 require('config.coc')
 require('config.keymap')
+require('config.mini')
