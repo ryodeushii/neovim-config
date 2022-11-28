@@ -6,6 +6,9 @@ vim.api.nvim_set_keymap('n', '<C-b>', ':NvimTreeFocus<cr>', {noremap = true})
 -- telescope actions
 vim.api.nvim_set_keymap('n', '<leader>ff', [[<Cmd>Telescope find_files<cr>]],
                         {noremap = true})
+
+vim.api.nvim_set_keymap('n', '<leader>fc', [[<Cmd>Telescope git_commits<cr>]],
+                        {noremap = true})
 vim.api.nvim_set_keymap('n', '<leader>fg', [[<Cmd>Telescope live_grep<cr>]],
                         {noremap = true})
 vim.api.nvim_set_keymap('n', '<leader>fb', [[<Cmd>Telescope buffers<cr>]],
